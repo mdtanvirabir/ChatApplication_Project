@@ -1,0 +1,192 @@
+.chat-logo {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+.chat-icon {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 50%;
+  margin-right: 10px;
+  animation: chat-icon-pulse 2s ease-in-out infinite;
+}
+
+.chat-icon::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  animation: chat-icon-bounce 2s ease-in-out infinite alternate;
+}
+
+h1 {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  animation: slide-left 5s forwards;
+  font-size:25px;
+}
+
+h2{
+ text-align:center;
+ font-size:28px;
+ color:white;
+}
+
+@keyframes slide-left {
+  from {
+  transform: translateX(100%);
+  }
+  to {
+  transform: translateX(0);
+}
+}
+
+@keyframes chat-icon-pulse {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(1.2);
+  }
+  100% {
+  transform: scale(1);
+}
+}
+
+@keyframes chat-icon-bounce {
+  0% {
+  transform: translate(0, 0);
+  }
+  100% {
+  transform: translate(0, 10px);
+  }
+}
+
+.chat-app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #007bff, #2d9cdb);
+  z-index: -1;
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
+}
+
+.chat-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 650px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 45px 20px rgba(0, 0, 0, 5.9);
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid black;
+}
+
+.chatApplication {
+  max-width: 600px;
+  width: 95%;
+  margin: 0 auto;
+  padding: 18px;
+  overflow: hidden;
+}
+
+.userBox {
+  max-width: 200px;
+  width: 100%;
+  float: left;
+  background: #fff;
+  display: inline-block;
+}
+
+#dropZone {
+  background-color: grey;
+  border: 2px dashed;
+  font-family:The time roman;
+  font-size:25px;
+  padding: 25px 0;
+  width: 65%;
+  height: 50px;
+  float: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.chatBox-wrapper {
+  max-width: 400px;
+  width: 100%;
+  display: inline-block;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+img {
+  max-width: 100px;
+  height: 100px;
+}
+
+.inputField { padding: 4px;}
+.btnSend {padding: 4px;}      
+
+h3 {
+  background-color:green;
+  color:white;
+  font-size:30px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size:18px;
+}
+#exit-button {
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-app{
+flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}

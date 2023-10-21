@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+   <title>Chat Application</title>
+   <link href="ChatApplication.css" rel="stylesheet">
+  </head>
+<body>
+  <div class="chat-app">
+  <div class="background"></div>
+<h2>Welcome to Chat Application webpage!</h2>
+    <p>This is my HTML-5 Project.</p>
+  <div class="chat-box">
+  <div class="chatApplication">
+  <div class="chat-logo">
+  <span class="chat-icon"></span>
+<h1 class="chatText">Chat Application</h1>
+ </div>
+ <div class="userBox">
+<h3>Active Users</h3>
+ <div id="users" style="float:left; width:200px"></div>
+</div>
+ <div class="chatBox-wrapper">
+ <div id="conversation" class="outputBox"></div>
+ <div class="chat-app">
+<p id="myImg"></p>
+ <div class="arrow"></div>
+ <div id="dropZone">Drop your file here...</div>
+<label>Enter Message:</label>
+ <input type="text" class="inputField" id="data" />
+ <button type="button" class="btnSend" id="datasend">Send</button>
+ <button id="exit-button">Close Chat</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  <script src="jquery-3.6.3.min.js"></script>
+  <script src="socket.io.js"></script>
+  <script src="default.js"></script>   
+</body>
+ </html>
